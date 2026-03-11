@@ -137,6 +137,53 @@ h6 {
 }
 
 /*--------------------------------------------------------------
+# Button
+--------------------------------------------------------------*/
+.cta-wrap {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.openreview-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  max-width: 100%;
+  min-height: 48px;
+  padding: clamp(0.85rem, 1.4vw, 1rem) clamp(1.4rem, 4vw, 2.4rem);
+  border-radius: 999px;
+  background-color: #d90429;
+  color: #fff;
+  text-decoration: none;
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.14);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.openreview-btn:hover {
+  background-color: #b90323;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.18);
+}
+
+.openreview-btn:focus-visible {
+  outline: 3px solid rgba(217, 4, 41, 0.25);
+  outline-offset: 4px;
+}
+
+@media (max-width: 600px) {
+  .openreview-btn {
+    width: 100%;
+    max-width: 420px;
+    white-space: normal;
+  }
+}
+/*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
 #header {
