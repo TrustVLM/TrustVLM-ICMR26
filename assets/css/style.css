@@ -139,13 +139,6 @@ h6 {
 /*--------------------------------------------------------------
 # Button
 --------------------------------------------------------------*/
-.organizer img {
-  width: 150px;        /* fixed width */
-  height: 150px;       /* fixed height */
-  object-fit: cover;   /* keeps aspect ratio and crops if needed */
-  border-radius: 50%;  /* optional: makes images circular */
-}
-
 .cta-wrap {
   display: flex;
   justify-content: center;
